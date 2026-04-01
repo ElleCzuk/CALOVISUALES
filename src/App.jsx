@@ -112,24 +112,12 @@ export default function App() {
         </video>
       </div>
 
-      <main style={{ position: 'relative', zIndex: 1, paddingTop: '100px', textAlign: 'center' }}>
-        <header style={{ marginBottom: '40px' }}>
+      <main style={{ position: 'relative', zIndex: 1, paddingTop: '200px', textAlign: 'center' }}>
+        <header style={{ marginBottom: '80px' }}>
           <p style={{ letterSpacing: '0.5em', fontSize: '10px', opacity: 0.8, marginBottom: '20px' }}>ATRAVESÁ EL RUIDO. DESTACÁ. ANTICIPATE.</p>
           <h1 style={{ fontSize: '62px', margin: 0, fontWeight: 800 }}>ESTO ES</h1>
           <img src={logoCalo} alt="CALO VISUALES" style={{ width: '380px', marginTop: '-80px' }} />
-        {/* LA FRASE AHORA DEBAJO DEL LOGO */}
-  <p style={{ 
-    color: 'white', 
-    fontSize: 'clamp(18px, 4vw, 28px)', 
-    fontWeight: 800, 
-    opacity: 0.9,
-    marginTop: '20px', // Espacio respecto al logo
-    letterSpacing: '0.1em',
-    textTransform: 'uppercase',
-    fontFamily: 'sans-serif'
-  }}>
-    SOMOS TU EQUIPO
-  </p>
+
 
   {/* SEPARADOR OPCIONAL PARA DAR PASO AL CARRUSEL */}
   <div style={{
