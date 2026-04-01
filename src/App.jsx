@@ -107,14 +107,14 @@ export default function App() {
       {/* FONDO CON TEXTURA Y VIDEO */}
       <div style={{ position: 'fixed', inset: 0, zIndex: 0 }}>
         <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${texturaFondo})`, backgroundSize: 'cover', opacity: 0.5 }}></div>
-        <video autoPlay loop muted playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.3, mixBlendMode: 'screen' }}>
+        <video autoPlay loop muted playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.5, mixBlendMode: 'screen' }}>
            <source src="https://res.cloudinary.com/dsyfitywd/video/upload/q_auto,f_auto/showreel_spzmjq.mp4" type="video/mp4" />
         </video>
       </div>
 
       <main style={{ position: 'relative', zIndex: 1, paddingTop: '200px', textAlign: 'center' }}>
         <header style={{ marginBottom: '80px' }}>
-          <p style={{ letterSpacing: '0.5em', fontSize: '10px', opacity: 0.8, marginBottom: '20px' }}>ATRAVESÁ EL RUIDO. DESTACÁ. ANTICIPATE.</p>
+          <p style={{ letterSpacing: '0.5em', fontSize: '8px', opacity: 0.8, marginBottom: '20px' }}>ATRAVESÁ EL RUIDO. DESTACÁ. ANTICIPATE.</p>
           <h1 style={{ fontSize: '62px', margin: 0, fontWeight: 800 }}>ESTO ES</h1>
           <img src={logoCalo} alt="CALO VISUALES" style={{ width: '380px', marginTop: '-80px' }} />
 
@@ -172,7 +172,6 @@ export default function App() {
     {/* COLUMNA 3: REDES (PRÓXIMAMENTE) */}
     <div>
       <h5 style={{ color: colors.cobre, marginBottom: '20px', fontSize: '16px', letterSpacing: '0.1em' }}>SÍGUENOS</h5>
-      <p style={{ fontSize: '12px', marginBottom: '15px', opacity: 0.5, fontStyle: 'italic' }}>Nuestras redes estarán activas muy pronto:</p>
       <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
         {/* Instagram Icon */}
         <div style={{ opacity: 0.4, cursor: 'not-allowed' }} title="Próximamente">
