@@ -164,18 +164,25 @@ export default function App() {
 
       <main style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative', zIndex: 10, paddingTop: '100px' }}>
         
-        <header style={{ textAlign: 'center', marginBottom: '80px' }}>
-          <p style={{ letterSpacing: '0.6em', fontSize: '11px', marginBottom: '25px', opacity: 0.8, fontWeight: 700, color: 'white' }}>
+        <header style={{ textAlign: 'center', marginTop: '80px' }}>
+          <p style={{ letterSpacing: '0.6em', fontSize: '11px', marginBottom: '60px', opacity: 0.8, fontWeight: 700, color: 'white' }}>
             ATRAVESÁ EL RUIDO. DESTACÁ. ANTICIPATE.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <h1 style={{ fontSize: 'clamp(45px, 9vw, 85px)', fontWeight: 1000, margin: 0, lineHeight: 0.8,  color: colors.blanco }}>ESTO ES</h1>
-            <div style={{ width: 'clamp(180px, 60vw, 520px)', marginTop: 'calc(-30px - 4vw)', marginBottom: 'calc( 200px - 2vw)' }}>
+            <div style={{ width: 'clamp(180px, 60vw, 520px)', marginTop: 'calc(-30px - 4vw)', marginBottom: 'calc( 100px - 2vw)' }}>
             <img src={logoCalo} alt="CALO VISUALES" style={{ width: '100%' }} />
             </div>
           </div>
         </header>
-
+{/* SEPARADOR GRÁFICO (LO QUE FALTABA) */}
+<div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '80px', position: 'relative', zIndex: 5 }}>
+          <div style={{
+            width: '40%', maxWidth: '300px', height: '1px',
+            background: `linear-gradient(90deg, transparent 0%, ${colors.cobre} 50%, transparent 100%)`,
+            boxShadow: `0 0 15px ${colors.terracota}`, opacity: 0.6
+          }}></div>
+        </div>
         <section style={{ position: 'relative', height: '400px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div style={{ position: 'relative', width: '320px', height: '320px' }}>
             {packsData.map((pack, index) => (
@@ -204,7 +211,7 @@ export default function App() {
           </button>
         </section>
 
-        <footer style={{ textAlign: 'center', marginTop: '60px', paddingBottom: '100px' }}>
+        <footer style={{ textAlign: 'center', marginTop: '60px', paddingBottom: '80px' }}>
             <p style={{ fontSize: 'clamp(20px, 5vw, 45px)', fontWeight: 800, opacity: 0.8, textTransform: 'uppercase', color: 'white' }}>
               SOMOS TU EQUIPO DE CONTENIDO
             </p>
