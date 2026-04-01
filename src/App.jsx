@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import logoCalo from './assets/Diseno_sin_titulo.png';
+import texturaFondo from './assets/textura.jpg';
 
 const colors = {
   terracota: '#8E281A',
@@ -152,7 +154,7 @@ export default function App() {
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
         <div style={{ 
           position: 'absolute', width: '100%', height: '100%', 
-          backgroundImage: 'url("/src/assets/Diseño sin título (9).jpg")', 
+          backgroundImage: `url(${texturaFondo})`, 
           backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.3 
         }}></div>
         <video autoPlay loop muted playsInline style={{ position: 'absolute', width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: 'screen', opacity: 0.4 }}>
@@ -169,7 +171,7 @@ export default function App() {
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <h1 style={{ fontSize: 'clamp(45px, 9vw, 85px)', fontWeight: 1000, margin: 0, lineHeight: 0.8,  color: colors.blanco }}>ESTO ES</h1>
             <div style={{ width: 'clamp(180px, 60vw, 520px)', marginTop: 'calc(-30px - 4vw)', marginBottom: 'calc( 200px - 2vw)' }}>
-                <img src="/src/assets/Diseno_sin_titulo.png" alt="CALO VISUALES" style={{ width: '100%' }} />
+            <img src={logoCalo} alt="CALO VISUALES" style={{ width: '100%' }} />
             </div>
           </div>
         </header>
