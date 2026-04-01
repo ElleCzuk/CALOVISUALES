@@ -124,8 +124,8 @@ export default function App() {
     width: '40px',
     height: '2px',
     backgroundColor: colors.cobre,
-    marginTop: '30px',
-    marginBottom: '40px'
+    marginTop: '250px',
+    marginBottom: '100px'
   }}></div>
         </header>
 
