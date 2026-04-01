@@ -1,0 +1,88 @@
+/* =========================================================
+   1. CARGA DE FUENTES (Google Fonts - No requiere subir archivos)
+   ========================================================= */
+
+/* Importamos Great Vibes (Cursiva) y Roboto (Sans-Serif de respaldo confiable) */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap');
+
+/* Mantenemos las definiciones de TT Hoves por si acaso las usás localmente,
+   pero Roboto funcionará como fallback global en StackBlitz */
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('/src/fonts/TTHoves-Regular.woff2') format('woff2'),
+       url('/src/fonts/TTHoves-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('/src/fonts/TTHoves-Bold.woff2') format('woff2'),
+       url('/src/fonts/TTHoves-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================================================
+   2. ESTILOS GLOBALES (Mantenemos tu espaciado apretado)
+   ========================================================= */
+* {
+  /* Si TT Hoves no carga localmente, Roboto mantendrá la estructura limpia */
+  font-family: 'TT Hoves', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: -0.051em; /* Tu espaciado original apretado */
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /* Fondo negro por defecto asegurado */
+  background-color: #050505; 
+  color: #ffffff; /* Textos generales blancos */
+  overflow-x: hidden; /* Evita scroll horizontal no deseado */
+}
+
+/* =========================================================
+   3. CLASES ESPECÍFICAS PARA EL VISOR (CALO STYLE)
+   ========================================================= */
+
+/* Clase para forzar la cursiva elegante de Google Fonts */
+.exclusive-title {
+  /* Usamos Great Vibes. Es fluida y StackBlitz la carga al instante */
+  font-family: 'Great Vibes', cursive !important;
+  
+  /* Las cursivas caligráficas necesitan más tamaño para lucir. 
+     Aumentado de 65px a 75px. */
+  font-size: 75px !important; 
+  color: #D77B5C !important; /* Color Cobre Calo */
+  
+  /* IMPORTANTE: Las cursivas caligráficas con espaciado negativo se rompen.
+     Forzamos letter-spacing 0 y quitamos mayúsculas para que sea legible. */
+  letter-spacing: 0 !important; 
+  text-transform: none !important; 
+  
+  /* Ajuste de línea para que no corte los trazos altos/bajos de la cursiva */
+  line-height: 1.0; 
+  font-weight: normal !important;
+  
+  /* Suavizado de fuente para mejor renderizado */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Clase para que el texto de la lista de Exclusive tenga más aire y elegancia */
+.exclusive-list-item {
+  /* Separamos un poco las letras para mejorar la lectura en el pack premium */
+  letter-spacing: 0.05em !important; 
+  opacity: 0.9; /* Un toque sutil de transparencia */
+}
+
+/* Clase auxiliar para títulos estándar en mayúsculas (FOTOS, SOCIAL MEDIA, etc.) */
+.standard-title {
+  font-family: 'TT Hoves', 'Roboto', sans-serif !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* Un poco de aire para las mayúsculas */
+}
